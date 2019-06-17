@@ -1,2 +1,2 @@
-# workshop_frontpage
-Frontpage app for OCP workshop
+Frontpage app for info for workshop attendees
+
