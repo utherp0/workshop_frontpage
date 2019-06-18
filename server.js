@@ -79,6 +79,19 @@ app.get( '/geturl', function (req,res) {
   }
 });
 
+app.get( '/getterminal', function (req,res) {
+  var targetURL = process.env["TERMINAL_URL"];
+
+  if( targetURL == null )
+  {
+    res.send( "NO DEFINED TERMINAL ENV");
+  }
+  else
+  {
+    res.send( targetURL );
+  }
+});
+
 app.get( '/envs', function (req,res) {
   res.send( getEnvs() );
 });
