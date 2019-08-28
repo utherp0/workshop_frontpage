@@ -22,6 +22,10 @@ app.get('/', function (req, res)
   res.render('node_test.html');
 });
 
+app.get('/hackathon', function (req,res) {
+  res.render('hackathon.html');
+});
+
 app.get('/page1.html', function (req,res ) {
   res.render('page1.html');
 });
